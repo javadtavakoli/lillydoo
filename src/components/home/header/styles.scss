@@ -1,4 +1,12 @@
-@import '../../../variables.scss';
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
 .header {
-    background: $header-color;
+  background: $header-bg-color;
+  color: $header-text-color;
+  padding: 0.53em 0;
+}
+.header__inner {
+  @include inner-view;
+  display: flex;
+  justify-content: space-between;
 }

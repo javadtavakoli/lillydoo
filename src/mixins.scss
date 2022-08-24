@@ -1,0 +1,6 @@
+@import "./variables.scss";
+
+@mixin inner-view {
+  margin: 0 auto;
+  max-width: 80em;
+}

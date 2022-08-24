@@ -1,4 +1,6 @@
+@import './variables.scss';
 .app {
+  color: $text-color;
 }
 
 .wrapper {
