@@ -1,12 +1,12 @@
 import HomeComponents from "../../components/home";
 
 const HomePage = () => {
-  const { Header, Menu } = HomeComponents;
+  const { Header, Menu, Configurator } = HomeComponents;
   return (
     <div>
       <Header />
       <Menu />
-      This is the home
+      <Configurator />
     </div>
   );
 };

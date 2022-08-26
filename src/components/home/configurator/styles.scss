@@ -1,0 +1,15 @@
+@import "../../../mixins.scss";
+@import "../../../variables.scss";
+.configurator {
+    background: $box-bg-color;
+    display: flex;
+    justify-content: center;
+}
+.configurator__title{
+    font-size: 1.875em;
+    margin-top: 2.75em;
+    margin-bottom: 2em;
+}
+.configurator__product-information{
+    
+}
