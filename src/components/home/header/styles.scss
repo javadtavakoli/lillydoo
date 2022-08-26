@@ -9,6 +9,7 @@
   @include inner-view;
   display: flex;
   justify-content: space-between;
+  
 }
 .header__logo-container {
   display: flex;
@@ -18,14 +19,42 @@
   padding-right: 0.75em;
   position: relative;
   border-right: 1px solid $header-accent-color;
-    &:not(:first-child) {
+  &:not(:first-child) {
     padding-left: 0.75em;
     img {
       transition: opacity 100ms ease-in-out;
       opacity: 0.75;
-      &:hover{
-        opacity:1;
+      &:hover {
+        opacity: 1;
       }
     }
+  }
+}
+.header__menu {
+  display: flex;
+  margin: 0;
+  li {
+    list-style: none;
+    font-size: 0.875em;
+    margin-right: 2.18em;
+    a {
+      color: $header-text-color;
+      text-decoration: none;
+    }
+  }
+}
+.header__menu-item--drop-down {
+  position: relative;
+
+  a::after {
+    content: "";
+    background: url("../../../assets/icons/drop-down.svg") no-repeat;
+    width: 9px;
+    height: 5px;
+    display: block;
+    background-size: contain;
+    position: absolute;
+    right: -12px;
+    top: 8px;
   }
 }
