@@ -1,0 +1,35 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+.menu {
+  background: $box-bg-color;
+  padding: 1.375em;
+  ul{
+    margin: 0;
+    display: flex;
+    li{
+      list-style: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      &:not(:last-child){
+        margin-right: 2.5em;
+      }
+    }
+  }
+}
+.menu__inner {
+  @include inner-view;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__logo{
+  img{
+    filter: brightness(0);
+    height: 1.3125em;
+  }
+
+}
+.menu__middle{
+
+}

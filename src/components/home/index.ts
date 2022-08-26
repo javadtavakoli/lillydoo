@@ -1,3 +1,5 @@
 import HeaderComponent from "./header";
-const HomeComponents = { Header: HeaderComponent };
+import MenuComponent from "./menu";
+
+const HomeComponents = { Header: HeaderComponent, Menu: MenuComponent };
 export default HomeComponents;
