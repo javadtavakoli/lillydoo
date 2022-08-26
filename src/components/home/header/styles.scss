@@ -10,3 +10,22 @@
   display: flex;
   justify-content: space-between;
 }
+.header__logo-container {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  padding-right: 0.75em;
+  position: relative;
+  border-right: 1px solid $header-accent-color;
+    &:not(:first-child) {
+    padding-left: 0.75em;
+    img {
+      transition: opacity 100ms ease-in-out;
+      opacity: 0.75;
+      &:hover{
+        opacity:1;
+      }
+    }
+  }
+}
