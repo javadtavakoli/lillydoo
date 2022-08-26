@@ -1,5 +1,7 @@
 import "./styles.scss";
 import shopIcon from "../../../assets/icons/basket.svg";
+import lillydooLogo from "../../../assets/images/header/lillydoo-logo-white.svg";
+import vioyLogo from "../../../assets/images/header/vivoy-logo-white.svg"
 const HeaderComponent = () => {
   return (
     <header className="header">
@@ -8,13 +10,13 @@ const HeaderComponent = () => {
           <a href="/" className="header__logo">
             <img
               alt="Lillydoo Logo"
-              src={"assets/images/header/lillydoo-logo-white.svg"}
+              src={lillydooLogo}
             />
           </a>
           <a href="/" className="header__logo">
             <img
               alt="Vivoy Logo"
-              src={"assets/images/header/vivoy-logo-white.svg"}
+              src={vioyLogo}
             />
           </a>
         </div>
