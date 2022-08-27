@@ -4,12 +4,56 @@
     background: $box-bg-color;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 2.75em 0;
 }
 .configurator__title{
     font-size: 1.875em;
-    margin-top: 2.75em;
     margin-bottom: 2em;
 }
+
 .configurator__product-information{
-    
+    padding-right: 6.5em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.configurator__product-image{
+    margin-bottom: 1em;
+}
+.configurator__product-description{
+    color: $text-accent-color;
+    font-size: 0.9em;
+}
+.configurator__separator-line{
+    background:  $border-color;
+    height: 1px;
+    width: 100%;
+    margin: 0.5em 0;
+}
+.configurator__product-features{
+    margin: 0.5em 0;
+    li{
+        list-style: none;
+        position: relative;
+        padding-left: calc(10px + 0.815em);
+        &:not(:last-child){
+            margin-bottom: 0.25em;
+        }
+
+        &::before{
+            content: "";
+            width: 10px;
+            height: 8px;
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 0;
+            background: url("~/public/assets/icons/checkmark.svg") no-repeat;
+            background-size: contain;
+
+        }
+    }
 }
