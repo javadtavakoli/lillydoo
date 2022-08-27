@@ -1,12 +1,11 @@
 import "./styles.scss";
-import lillydooLogo from "../../../assets/images/header/lillydoo-logo-white.svg";
 const MenuComponent = () => {
   return (
     <nav className="menu">
       <div className="menu__inner">
         <div className="menu__logo">
           <a href="/">
-            <img alt="Lillydoo big logo" src={lillydooLogo} />
+            <img alt="Lillydoo big logo" src={"/assets/images/header/lillydoo-logo-white.svg"} />
           </a>
         </div>
         <div className="menu__middle">
