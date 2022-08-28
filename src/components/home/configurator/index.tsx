@@ -3,7 +3,7 @@ const ConfiguratorComponent = () => {
   return (
     <div className="configurator">
       <div className="configurator__title">4 Klicks zu Deinem Windel-Abo</div>
-      <div className="configurator_inner">
+      <div className="configurator__inner">
         <div className="configurator__product-information">
           <img
             src={"/assets/images/configurator/diapers-regular_size4.png"}
@@ -32,6 +32,7 @@ const ConfiguratorComponent = () => {
             </li>
           </ul>
         </div>
+        <div className="configurator__controls">f</div>
       </div>
     </div>
   );
