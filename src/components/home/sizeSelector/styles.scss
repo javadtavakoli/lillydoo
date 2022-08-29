@@ -1,0 +1,61 @@
+@import "../../../variables.scss";
+.size-selector__row {
+  display: flex;
+  margin: 2em 0;
+}
+.size-selector__title-col {
+  display: flex;
+  flex-flow: column;
+  margin-right: 6em;
+}
+
+.size-selector__title {
+  font-weight: 400;
+  font-size: 1.125em;
+}
+.size-selector__quantity {
+  color: $text-accent-color;
+  font-size: 0.9em;
+}
+.size-selector__buttons-container {
+  display: flex;
+}
+.size-selector__button {
+  width: 2em;
+  border: 1px solid $border-active-color;
+  font-size: 1.125em;
+  background: $bg-color;
+  font-weight: 400;
+  cursor: pointer;
+}
+.size-selector__button:disabled {
+  border-color: $border-color;
+  color: $border-color;
+  cursor: not-allowed;
+}
+.size-selector__slider {
+  width: 6em;
+  overflow: hidden;
+  margin: 0 1em;
+  position: relative;
+}
+.size-selector__info {
+  align-items: center;
+  position: absolute;
+  transition: transform 330ms ease-in-out;
+  width: 6em;
+}
+.size-selector__info--before {
+  transform: translateX(-6em);
+}
+.size-selector__info--after {
+  transform: translateX(+6em);
+}
+.size-selector__number {
+  font-weight: 400;
+  text-align: center;
+}
+.size-selector__desc {
+  color: $text-accent-color;
+  text-align: center;
+}
