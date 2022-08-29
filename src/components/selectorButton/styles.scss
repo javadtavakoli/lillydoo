@@ -1,0 +1,20 @@
+@import "../../variables.scss";
+.selector-button {
+  width: 14.678em;
+  min-height: 3.25em;
+  border-radius: 0.25em;
+  border: 1px solid $border-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $bg-color;
+  cursor: pointer;
+  font-size: 1.125em;
+  font-weight: 400;
+  &:not(:last-child) {
+    margin-right: 1em;
+  }
+}
+.selector-button--active {
+  border: 1px solid $border-active-color;
+}

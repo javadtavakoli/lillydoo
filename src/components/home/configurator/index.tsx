@@ -1,3 +1,4 @@
+import SelectorButton from "../../selectorButton";
 import "./styles.scss";
 const ConfiguratorComponent = () => {
   return (
@@ -32,7 +33,34 @@ const ConfiguratorComponent = () => {
             </li>
           </ul>
         </div>
-        <div className="configurator__controls">f</div>
+        <div className="configurator__controls">
+          <div className="configurator__button-title">Passform</div>
+          <div className="configurator__buttons-row">
+            <SelectorButton onClick={() => {}} active={false}>
+             <div className="configurator__diaper-icon"></div> Windlen
+            </SelectorButton>
+            <SelectorButton onClick={() => {}} active={false}>
+            <div className="configurator__pant-icon"></div>  Pants
+            </SelectorButton>
+          </div>
+          <div className="configurator__button-title">Windellinie</div>
+          <div className="configurator__buttons-row">
+            <SelectorButton onClick={() => {}} active={false}>
+              <img
+                src="/assets/images/configurator/lillydoo-logo-regular.svg"
+                className="configurator__button-image"
+                alt="Lillydoo regular"
+              />
+            </SelectorButton>
+            <SelectorButton onClick={() => {}} active={false}>
+              <img
+                src="/assets/images/configurator/lillydoo-logo-green.svg"
+                className="configurator__button-image"
+                alt="Lillydoo green"
+              />
+            </SelectorButton>
+          </div>
+        </div>
       </div>
     </div>
   );
