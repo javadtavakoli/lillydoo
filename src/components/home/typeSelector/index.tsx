@@ -1,5 +1,5 @@
 import "./styles.scss";
-import SelectorButton from "../selectorButton";
+import SelectorButton from "../../selectorButton";
 import { useState } from "react";
 
 const TypeSelectorComponent = () => {

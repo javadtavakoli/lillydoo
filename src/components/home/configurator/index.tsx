@@ -1,5 +1,5 @@
 import useInitialize from "../../../hooks/initialize";
-import TypeSelector from "../../typeSelector";
+import TypeSelector from "../typeSelector";
 import LineSelector from "../lineSelector";
 import SizeSelector from "../sizeSelector";
 import "./styles.scss";
