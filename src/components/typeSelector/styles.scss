@@ -1,0 +1,34 @@
+.type-selector{
+    display: flex;
+    flex-flow: column;
+}
+.type-selector__button-title {
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 1.25em;
+    margin-bottom: 0.5em;
+  }
+  .type-selector__buttons-row {
+    display: flex;
+  }
+  
+  .type-selector__button-image {
+    margin: 1.5em auto;
+    width: 5em;
+  }
+  .type-selector__pant-icon {
+    width: 25px;
+    height: 24px;
+    background-image: url("~/public/assets/icons/pant.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 1em;
+  }
+  .type-selector__diaper-icon {
+    width: 30px;
+    height: 20px;
+    background-image: url("~/public/assets/icons/diaper.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 1em;
+  }

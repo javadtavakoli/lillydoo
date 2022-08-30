@@ -1,4 +1,5 @@
 import SelectorButton from "../../selectorButton";
+import TypeSelector from "../../typeSelector";
 import SizeSelector from "../sizeSelector";
 import "./styles.scss";
 const ConfiguratorComponent = () => {
@@ -35,15 +36,7 @@ const ConfiguratorComponent = () => {
           </ul>
         </div>
         <div className="configurator__controls">
-          <div className="configurator__button-title">Passform</div>
-          <div className="configurator__buttons-row">
-            <SelectorButton onClick={() => {}} active={false}>
-              <div className="configurator__diaper-icon"></div> Windlen
-            </SelectorButton>
-            <SelectorButton onClick={() => {}} active={false}>
-              <div className="configurator__pant-icon"></div> Pants
-            </SelectorButton>
-          </div>
+          <TypeSelector/>
           <SizeSelector />
           <div className="configurator__button-title">Windellinie</div>
           <div className="configurator__buttons-row">
