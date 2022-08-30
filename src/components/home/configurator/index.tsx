@@ -4,6 +4,7 @@ import LineSelector from "../lineSelector";
 import SizeSelector from "../sizeSelector";
 import ProductImage from "../productImage";
 import ProductFeatures from "../productFeatures";
+import ProductPrice from "../productPrice";
 import "./styles.scss";
 const ConfiguratorComponent = () => {
   useInitialize();
@@ -26,10 +27,7 @@ const ConfiguratorComponent = () => {
           <TypeSelector />
           <SizeSelector />
           <LineSelector />
-          <div className="configurator__price">
-            <span className="configurator__price--line">66,00 €</span> 49,50 €{" "}
-            <span className="configurator__price--accent">(inkl. MwSt)</span>
-          </div>
+          <ProductPrice />
           <div className="configurator__button-row">
             <button className="configurator__button">
               Jetzt Abo Bestellen
