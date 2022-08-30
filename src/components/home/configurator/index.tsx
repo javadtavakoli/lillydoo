@@ -1,8 +1,10 @@
+import useInitialize from "../../../hooks/initialize";
 import TypeSelector from "../../typeSelector";
 import LineSelector from "../lineSelector";
 import SizeSelector from "../sizeSelector";
 import "./styles.scss";
 const ConfiguratorComponent = () => {
+  useInitialize();
   return (
     <div className="configurator">
       <div className="configurator__title">4 Klicks zu Deinem Windel-Abo</div>
