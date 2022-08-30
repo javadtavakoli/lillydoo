@@ -1,6 +1,24 @@
 @import "../../../variables.scss";
 @import "../../../mixins.scss";
-
+.menu__menu-icon{
+  background: url("~/public/assets/icons/menu.svg");
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 15.5px;
+  cursor: pointer;
+  display: none;
+}
+.menu__shop-icon{
+  background: url("~/public/assets/icons/basket-black.svg");
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 19.12px;
+  height: 25px;
+  margin-left: auto;
+  cursor: pointer;
+  display: none;
+}
 .menu {
   background: $box-bg-color;
   padding: 1.375em;
@@ -29,4 +47,23 @@
     height: 1.3125em;
   }
 
+}
+@media (max-width:$br-l) {
+  .menu{
+    padding-top: 3.5em;
+    border-bottom: 1px solid $border-color;
+    ul{
+      display: none;
+    }
+
+  }
+  .menu__logo{
+    margin: 0 auto;
+  }
+  .menu__menu-icon{
+    display: block;
+  }
+  .menu__shop-icon{
+    display: block;
+  }
 }
