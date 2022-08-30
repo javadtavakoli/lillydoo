@@ -1,5 +1,6 @@
 import SelectorButton from "../../selectorButton";
 import TypeSelector from "../../typeSelector";
+import LineSelector from "../lineSelector";
 import SizeSelector from "../sizeSelector";
 import "./styles.scss";
 const ConfiguratorComponent = () => {
@@ -36,34 +37,9 @@ const ConfiguratorComponent = () => {
           </ul>
         </div>
         <div className="configurator__controls">
-          <TypeSelector/>
+          <TypeSelector />
           <SizeSelector />
-          <div className="configurator__button-title">Windellinie</div>
-          <div className="configurator__buttons-row">
-            <SelectorButton onClick={() => {}} active={false}>
-              <img
-                src="/assets/images/configurator/lillydoo-logo-regular.svg"
-                className="configurator__button-image"
-                alt="Lillydoo regular"
-              />
-            </SelectorButton>
-            <SelectorButton onClick={() => {}} active={false}>
-              <img
-                src="/assets/images/configurator/lillydoo-logo-green.svg"
-                className="configurator__button-image"
-                alt="Lillydoo green"
-              />
-            </SelectorButton>
-          </div>
-          <div className="configurator__price">
-            <span className="configurator__price--line">66,00 €</span> 49,50 €{" "}
-            <span className="configurator__price--accent">(inkl. MwSt)</span>
-          </div>
-          <div className="configurator__button-row">
-            <button className="configurator__button">
-              Jetzt Abo Bestellen
-            </button>
-          </div>
+          <LineSelector />
         </div>
       </div>
     </div>

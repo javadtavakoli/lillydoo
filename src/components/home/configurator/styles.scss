@@ -69,30 +69,9 @@
   line-height: 1.25em;
   margin-bottom: 0.5em;
 }
-.configurator__buttons-row {
-  display: flex;
-}
 
-.configurator__button-image {
-  margin: 1.5em auto;
-  width: 5em;
-}
-.configurator__pant-icon {
-  width: 25px;
-  height: 24px;
-  background-image: url("~/public/assets/icons/pant.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 1em;
-}
-.configurator__diaper-icon {
-  width: 30px;
-  height: 20px;
-  background-image: url("~/public/assets/icons/diaper.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 1em;
-}
+
+
 .configurator__price {
   text-align: center;
   font-weight: 400;
