@@ -9,7 +9,7 @@ const ProductImageComponent = () => {
       src={`/assets/images/configurator/${
         selectedProduct?.productType
       }-${productLine.toLowerCase()}_size${selectedProduct?.sizeNumber}.png`}
-      alt="Dipers Regular Size 4"
+      alt={`${selectedProduct?.productType} ${productLine} Size ${selectedProduct?.sizeNumber}`}
       className="product-image"
     />
   );
