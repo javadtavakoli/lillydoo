@@ -13,6 +13,7 @@ export const configurationsSlice = createSlice({
   reducers: {
     changeType: (state, action: PayloadAction<ProductType>) => {
       state.productType = action.payload;
+      state.productIndex = 0;
     },
     changeProduct: (state, action: PayloadAction<number>) => {
       state.productIndex = action.payload;
