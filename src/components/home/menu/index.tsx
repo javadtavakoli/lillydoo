@@ -3,6 +3,7 @@ const MenuComponent = () => {
   return (
     <nav className="menu">
       <div className="menu__inner">
+        <div className="menu__menu-icon"></div>
         <div className="menu__logo">
           <a href="/">
             <img alt="Lillydoo big logo" src={"/assets/images/header/lillydoo-logo-white.svg"} />
@@ -20,6 +21,7 @@ const MenuComponent = () => {
             <li>Magazin</li>
             <li>Über Lillydoo</li>
           </ul>
+          <div className="menu__shop-icon"></div>
         </div>
       </div>
     </nav>
