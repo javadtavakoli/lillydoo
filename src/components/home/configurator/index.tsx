@@ -2,6 +2,7 @@ import useInitialize from "../../../hooks/initialize";
 import TypeSelector from "../typeSelector";
 import LineSelector from "../lineSelector";
 import SizeSelector from "../sizeSelector";
+import ProductImage from "../productImage";
 import "./styles.scss";
 const ConfiguratorComponent = () => {
   useInitialize();
@@ -10,11 +11,7 @@ const ConfiguratorComponent = () => {
       <div className="configurator__title">4 Klicks zu Deinem Windel-Abo</div>
       <div className="configurator__inner">
         <div className="configurator__product-information">
-          <img
-            src={"/assets/images/configurator/diapers-regular_size4.png"}
-            alt="Dipers Regular Size 4"
-            className="configurator__product-image"
-          />
+          <ProductImage />
           <div className="configurator__product-description">
             Du willst mehr Auswahlmöglichkeiten?
           </div>
@@ -38,9 +35,9 @@ const ConfiguratorComponent = () => {
           </ul>
         </div>
         <div className="configurator__controls">
-          <TypeSelector/>
+          <TypeSelector />
           <SizeSelector />
-          <LineSelector/>
+          <LineSelector />
           <div className="configurator__price">
             <span className="configurator__price--line">66,00 €</span> 49,50 €{" "}
             <span className="configurator__price--accent">(inkl. MwSt)</span>
