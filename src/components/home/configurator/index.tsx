@@ -3,6 +3,7 @@ import TypeSelector from "../typeSelector";
 import LineSelector from "../lineSelector";
 import SizeSelector from "../sizeSelector";
 import ProductImage from "../productImage";
+import ProductFeatures from "../productFeatures";
 import "./styles.scss";
 const ConfiguratorComponent = () => {
   useInitialize();
@@ -19,20 +20,7 @@ const ConfiguratorComponent = () => {
             Hier kommst du zu unserem Abo Konfigurator.
           </div>
           <div className="configurator__separator-line"></div>
-          <ul className="configurator__product-features">
-            <li>
-              6 Packungen, <strong>alle 4 Wochen</strong>
-            </li>
-            <li>
-              <strong>100% flexibel</strong>| jederzeit kündbar
-            </li>
-            <li>
-              Unsere <strong>hautfreundlichen</strong> Windeln
-            </li>
-            <li>
-              <strong>11,00 €</strong>/ Packung (0,38 €/Windel)
-            </li>
-          </ul>
+          <ProductFeatures />
         </div>
         <div className="configurator__controls">
           <TypeSelector />

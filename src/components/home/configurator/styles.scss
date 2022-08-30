@@ -35,29 +35,7 @@
 .configurator__inner {
   display: flex;
 }
-.configurator__product-features {
-  margin: 0.5em 0;
-  li {
-    list-style: none;
-    position: relative;
-    padding-left: calc(10px + 0.815em);
-    &:not(:last-child) {
-      margin-bottom: 0.25em;
-    }
 
-    &::before {
-      content: "";
-      width: 10px;
-      height: 8px;
-      position: absolute;
-      transform: translateY(-50%);
-      top: 50%;
-      left: 0;
-      background: url("~/public/assets/icons/checkmark.svg") no-repeat;
-      background-size: contain;
-    }
-  }
-}
 .configurator__controls {
   padding: 0.71em 0 0.71em 3em;
 }
