@@ -1,18 +1,19 @@
-import TypeSelector from "../../typeSelector";
+import useInitialize from "../../../hooks/initialize";
+import TypeSelector from "../typeSelector";
 import LineSelector from "../lineSelector";
 import SizeSelector from "../sizeSelector";
+import ProductImage from "../productImage";
+import ProductFeatures from "../productFeatures";
+import ProductPrice from "../productPrice";
 import "./styles.scss";
 const ConfiguratorComponent = () => {
+  useInitialize();
   return (
     <div className="configurator">
       <div className="configurator__title">4 Klicks zu Deinem Windel-Abo</div>
       <div className="configurator__inner">
         <div className="configurator__product-information">
-          <img
-            src={"/assets/images/configurator/diapers-regular_size4.png"}
-            alt="Dipers Regular Size 4"
-            className="configurator__product-image"
-          />
+          <ProductImage />
           <div className="configurator__product-description">
             Du willst mehr Auswahlmöglichkeiten?
           </div>
@@ -20,29 +21,13 @@ const ConfiguratorComponent = () => {
             Hier kommst du zu unserem Abo Konfigurator.
           </div>
           <div className="configurator__separator-line"></div>
-          <ul className="configurator__product-features">
-            <li>
-              6 Packungen, <strong>alle 4 Wochen</strong>
-            </li>
-            <li>
-              <strong>100% flexibel</strong>| jederzeit kündbar
-            </li>
-            <li>
-              Unsere <strong>hautfreundlichen</strong> Windeln
-            </li>
-            <li>
-              <strong>11,00 €</strong>/ Packung (0,38 €/Windel)
-            </li>
-          </ul>
+          <ProductFeatures />
         </div>
         <div className="configurator__controls">
-          <TypeSelector/>
+          <TypeSelector />
           <SizeSelector />
-          <LineSelector/>
-          <div className="configurator__price">
-            <span className="configurator__price--line">66,00 €</span> 49,50 €{" "}
-            <span className="configurator__price--accent">(inkl. MwSt)</span>
-          </div>
+          <LineSelector />
+          <ProductPrice />
           <div className="configurator__button-row">
             <button className="configurator__button">
               Jetzt Abo Bestellen
