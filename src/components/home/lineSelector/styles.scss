@@ -3,15 +3,18 @@
   flex-flow: column;
 }
 .line-selector__button-title {
-    font-weight: 400;
-    font-size: 1.125em;
-    line-height: 1.25em;
-    margin-bottom: 0.5em;
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 1.25em;
+  margin-bottom: 0.5em;
+}
+.line-selector__buttons-row {
+  display: flex;
+  button {
+    flex: 1;
   }
-  .line-selector__buttons-row {
-    display: flex;
-  }
-  .line-selector__button-image {
-    margin: 1.5em auto;
-    width: 5em;
-  }
+}
+.line-selector__button-image {
+  margin: 1.5em auto;
+  width: 5em;
+}
