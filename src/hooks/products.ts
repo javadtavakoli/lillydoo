@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { useAppSelector } from "./reduxHooks";
 
 export const useGetProducts = () => {
-  const { subscriptions } = useAppSelector((state) => state);
+  const { subscriptions } = useAppSelector((state) => state.subscriptions);
   const { productType } = useAppSelector((state) => state.configurations);
   const products = useMemo(
     () =>
