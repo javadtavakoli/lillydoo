@@ -59,3 +59,8 @@
     top: 8px;
   }
 }
+@media (max-width:$br-l){
+  .header{
+    display: none;
+  }
+}
